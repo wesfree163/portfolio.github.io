@@ -6,9 +6,11 @@ body{
 
 #stage {
     margin: 2em auto 1em 50%;
-    height: 330px;
+    height: 360px;
     -webkit-perspective: 2100px;
-    -webkit-perspective-origin: 0 75%;
+    -webkit-perspective-origin: 0 40%;
+    margin-top: 660px;
+    position: absolute;
 }
 #rotator a {
     position: absolute;
@@ -30,6 +32,7 @@ body{
 }
 ul{
     list-style-type: none;
+    margin-top: 360px;
 }
 li{
     margin: 10px 0;
@@ -42,6 +45,7 @@ ul li a{
     position: absolute;
     top: 930px;
     margin: 25px;
+    
 }
 
   #rotator  a:nth-of-type(1) img {
