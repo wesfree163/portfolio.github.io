@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./scripts/jquery.js">
     <title>Mr. Wesley's Portfolio</title>
 </head>
 <script type="text/javascript">
@@ -31,7 +32,7 @@
     target.addEventListener("MSAnimationEnd", rotateComplete, false);
   
   </script>
-  <script type="text/javascript">
+<script type="text/javascript">
 
     document.addEventListener("DOMContentLoaded", function() {
   
@@ -51,7 +52,20 @@
     }, false);
   
   </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+<script>
+    $(document).ready(function(){
+        $("div.parallelogram").delay(500).slideToggle(1000);
+        $("p.name").delay(1500).fadeToggle(1000);
+    });
+  </script>
 <body>
+
+    <div class="parallelogram">
+        <p class="name"><span>W</span>ESLEY <span>G.</span> <span>F</span>REEMAN</p>
+    </div>
+
     <div id="stage">
         <div id="rotator" style="-webkit-animation-name: rotator;">
             <a href="1.jpg"><img src="./images/aws-logo-1024x626.png" width="140"></a>
@@ -62,7 +76,7 @@
             <a href="5.jpg"><img src="./images/software.png" width="140"></a>
         </div>
     </div>
-    
+
     <ul class="services">
         <li><a href="">Smartphone Services</a></li>
         <li><a href="">Desktop Services</a></li>
@@ -72,13 +86,13 @@
         <li><a href="">Webpage Development</a></li>
         <li><a href="">Social Media Solutions</a></li>
         <li><a href="">Technology Consulting</a></li>
-        <li><a href="">Dynamic Scheduler (Queued Service)</a></li>
+        <li><a href="">Appointments</a></li>
     </ul>
 
     <div class="staticItem">
         <p class="psa">
-            Scheduling and more information is available either at the FAQ 
-            page, about page, or via special request. Thank you so much for
+            More information on my mission is available either at the FAQ 
+            page, about page, or upon request. Thank you so much for
             stopping by. Your feedback is the most critical part of this
             business and is greatly appreciated.
         </p>
