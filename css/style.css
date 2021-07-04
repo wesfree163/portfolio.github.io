@@ -4,54 +4,26 @@ body{
     background-size: cover ;
     margin: 0;
     background: rgb(34,95,195);
-    background: linear-gradient(0deg, rgba(34,95,195,1) 9%, rgba(233,175,49,0.9360711651917404) 96%);
+    background: linear-gradient(0deg, rgb(29, 29, 29) 9%, rgba(213, 213, 213, 0.936) 96%);
 }
 html,body
 {
     width: auto;
     height: 100%;
     margin: 0px;
+    margin-left: 5px;
     padding: 0px;
     overflow-x: hidden; 
 }
 
-/* *{
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 0;
-    margin: 0;
-} */
-
-button{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    height: 20vh;
-    width: 20vh;
-    border-radius: 9em;
-    border-color: rgba(41, 102, 199, 0.912);
-    color: wheat;
-    background: rgba(235, 201, 12, 0.672);
-    background: linear-gradient(0deg, rgb(88, 34, 195) 9%, rgba(233,175,49,0.9360711651917404) 96%);
-    box-shadow: 6px 7px 7px #3c3c3c70, 
-            -2px -1px 6px #373737c6;
-}
-
-p, a{
-    text-decoration: none;
-    color: wheat;
-}
-
 .parallelogram{
-    position: relative;
+    position: absolute;
     left: 5vh;
     top: 9vh;
-    transform: translate(-90vh, -50%) skew(-15deg);
-    width: 120vh;
-    height: 13.5vh;
+    transform: translate(-90vh, -50%);
+    /* transform: translate(-90vh, -50%) skew(-15deg); */
+    width: 135vh;
+    height: 15vh;
     background: #333333;
     box-shadow: 20px 15px 15px #3c3c3c, 
             -5px -5px 30px #373737;
@@ -60,9 +32,62 @@ p, a{
 .name{
     color: rgb(255, 255, 255);
     position: relative;
-    transform: skew(15deg);
-    top: 5.4vh;
+    /* transform: skew(15deg); */
     left: 96vh;
-    font-size: 2.7vh;
-    display: none;
+    font-size: 3vh;
 }
+
+.subname{
+    color: rgb(255, 255, 255);
+    position: relative;
+    /* transform: skew(15deg); */
+    left: 108vh;
+    font-size: 2.1vh;
+}
+/* NAVIGATION MENU */
+.topnav {
+    background-color: transparent;
+    position: relative;
+    width: 51vh;
+    top: 21vh;
+  }
+  
+  .topnav .Links {
+    display: none;
+    background-color: #373737;
+    box-shadow: 20px 15px 15px #3c3c3c, 
+            -5px -5px 30px #373737;
+  }
+
+  .Links{
+    margin-top: 50px;
+    position: absolute;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 10px 7px 7px #3c3c3c, 
+            -2px -2px 20px #373737;
+  }
+  
+  .topnav a:hover {
+    background-color: rgba(221, 221, 221, 0.857);
+    color: black;
+  }
+  
+  .active {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+  }

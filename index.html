@@ -5,30 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./scripts/jquery.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Mr. Wesley's Portfolio</title>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
         $("div.parallelogram").delay(500).slideToggle(1000);
-        $("p.name").delay(1500).fadeToggle(1000);
     });
-  </script>
-
-<style>
-    
-</style>
-
+</script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        var y = document.getElementsByClassName("topnav");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 <body>
 
+    
+
     <div class="parallelogram">
-        <p class="name"><span>W</span>ESLEY <span>G.</span> <span>F</span>REEMAN</p>
+        <p class="name"><span>P</span>ORT<span>F</span><span>O</span>LIO</p>
+        <p class="subname">Project: Scalar</p>
     </div>
 
-    <button>
-        <p><a href="http://35.174.4.13">START</a></p>
-    </button>
-
+    <div class="topnav">
+        <!-- <a href="#home" class="active"><i class="fa fa-bars"></i></a> -->
+        <div id="myLinks" class="Links">
+            <a href="#news">React Web Framework</a>
+            <a href="#contact">Django Web Framework</a>
+            <a href="#about">Redir3</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 </body>
 </html>
