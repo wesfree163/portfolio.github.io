@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+html{
+  font-family: 'Oxygen', sans-serif;
+}
+
 body{
     /* background-image: url(../images/PORTFOLIO.GITHUB.PAGE.png); */
     background-repeat: no-repeat;
     background-size: cover ;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
     background: rgb(34,95,195);
-    background: linear-gradient(0deg, rgb(29, 29, 29) 9%, rgba(213, 213, 213, 0.936) 96%);
+    background: linear-gradient(0deg, rgb(63, 63, 63) 9%, rgba(242, 242, 243, 0.936) 96%);
 }
 html,body
 {
@@ -13,10 +21,11 @@ html,body
     margin: 0px;
     margin-left: 5px;
     padding: 0px;
-    overflow-x: hidden; 
+    /* overflow-x: hidden;  */
 }
 
 .parallelogram{
+    border-radius: .2em;
     position: absolute;
     left: 5vh;
     top: 9vh;
@@ -44,50 +53,93 @@ html,body
     left: 108vh;
     font-size: 2.1vh;
 }
+
+
+
+
 /* NAVIGATION MENU */
 .topnav {
-    background-color: transparent;
-    position: relative;
-    width: 51vh;
-    top: 21vh;
-  }
-  
-  .topnav .Links {
-    display: none;
-    background-color: #373737;
-    box-shadow: 20px 15px 15px #3c3c3c, 
-            -5px -5px 30px #373737;
-  }
+  background-color: transparent;
+  position: absolute;
+  width: 51vh;
+  top: 21vh;
+}
 
-  .Links{
-    margin-top: 50px;
-    position: absolute;
-  }
-  
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    box-shadow: 10px 7px 7px #3c3c3c, 
-            -2px -2px 20px #373737;
-  }
-  
-  .topnav a:hover {
-    background-color: rgba(221, 221, 221, 0.857);
-    color: black;
-  }
-  
-  .active {
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
-  } 
+.topnav .Links {
+  display: none;
+  background-color: #373737;
+  box-shadow: 20px 15px 15px #3c3c3c, 
+          -5px -5px 30px #373737;
+}
+
+.Links{
+  margin-top: 50px;
+  position: absolute;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 10px 7px 7px #3c3c3c, 
+          -2px -2px 20px #373737;
+}
+
+.topnav a:hover {
+  background-color: rgba(221, 221, 221, 0.857);
+  color: black;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+
+
+/* THE WORKSPACE */
+.workspace{
+  margin: 21px;
+  position: absolute;
+  left: 350px;
+  min-width: 500px;
+}
+
+.heading{
+  border-radius: .2em;
+  background-color: #c0c0c0c6;
+  box-shadow: 7px 7px 7px #3c3c3cd5, 
+          0px 0px 0px #373737;
+}
+
+.imgSpace{
+  position: relative;
+  width: 75%;
+  height: auto;
+  box-shadow: 10px 7px 7px #3c3c3c, 
+          -2px -2px 20px #373737;
+}
+
+.title{
+  word-wrap: break-word;
+}
+
+.text{
+  word-wrap: break-word;
+}
+
+.subtext{
+  font-size: 12px;
+  text-align: right;
+  margin-right: 45px;
+}
